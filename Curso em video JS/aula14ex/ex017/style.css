@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(107, 107, 241);
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow:  3px 3px 10px rgba(184, 173, 173, 0.39);
+}
+
+p {
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+
+
+
+footer {
+  font-style:italic ;
+  color: white;
+  text-align: center;
+}

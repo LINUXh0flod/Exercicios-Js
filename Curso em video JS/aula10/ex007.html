@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somando Números</title>
+  <style>
+
+    *{
+      margin: 0;
+    }
+    body {
+      font: normal 18pt arial;
+    }
+
+    .area {
+      margin-top: 3em;
+      font: normal 20pt arial;
+      background: rgb(42, 139, 42);
+      color: white;
+      width: 100vw;
+    
+      height: 200px;
+      line-height:200px ;
+      text-align: center;
+    position: relative;
+    }
+
+ #in {
+  margin-left: 14em;
+  margin-top: 2em;
+
+ }
+
+ h1 {
+  margin-left: 6.5em;
+ }
+  
+  </style>
+</head>
+<body>
+  <h1>Somando valores</h1>
+  <!--CRIANDO OS INPUTS-->
+  <div id="in">
+    <input type="number" name="txtn1" id="txtn1"> 
+    
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    
+  </div>
+  <div class="area" id="res">Resultado</div>
+
+  <script>
+    //ODEIO ESSE KARALHO DE PROGRAMAÇAO. ISSO SO ME ESTRESSA, MAS EU AMO
+ //Funçoes   
+function somar () {
+  //Variaveis
+  var tn1 = window.document.getElementById('txtn1')
+  var tn2 = window.document.getElementById('txtn2')
+  //Resultado
+  const res = window.document.getElementById('res')
+  //Valor dos numeros
+  var n1 = Number(tn1.value)
+  var n2 = Number(tn2.value)
+  //Soma dos numeros
+  var s = n1 + n2 
+  //Resultado
+  res.innerHTML = (`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+}
+
+
+  </script>
+</body>
+</html>

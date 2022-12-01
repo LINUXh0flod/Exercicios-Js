@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #area {
+      font: normal 20pt arial;
+      background: rgb(42, 139, 42);
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height:200px ;
+      text-align: center;
+    position: relative;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div id="area" onclick="clikar()" onmouseenter="entrar()" onmouseout="saiu()">Interaja</div>
+  
+<h1 id="h1" onclick="clicar()" onmouseout="sair()">Linux é o gigante</h1>
+
+<script>
+  var c = document.getElementById('area')
+  
+  function clikar() {
+  area.innerHTML = 'clicou'
+  area.style.background = 'red'
+}
+
+
+function entrar() {
+  area.innerHTML = 'Entrou'
+  area.style.background = 'blue'
+}
+
+function saiu() {
+  area.innerHTML = 'Saiu'
+  area.style.background = 'purple'
+  
+}
+
+var l = document.getElementById('h1')
+function clicar(){
+  l.style.background = 'red'
+  
+  
+}
+
+function sair(){
+  l.style.background = ''
+}
+
+
+</script>
+
+</div>
+</body>
+</html>
