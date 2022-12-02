@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+text-align: center;
+}
+.caixas {
+    display: flex;
+}
+
+.start,
+.pause {
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.start {
+    background-color: green;
+}
+
+.pause {
+    background-color: orangered;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Controle de Tempo</h1>
+        <p id="tempo">0</p>
+        <div class="caixas">
+            <div class="start" onclick="ativarContagem()">Ativar contagem</div>
+            <div class="pause" onclick="pararContagem()">Parar contagem</div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
